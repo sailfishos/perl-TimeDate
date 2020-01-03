@@ -3,14 +3,14 @@ Version:        1.20
 Release: 	1
 Summary:        A Perl module for time and date manipulation
 
-Group:          Development/Libraries
 License:        GPL+ or Artistic
 URL:            http://search.cpan.org/dist/TimeDate/
-Source0:        http://www.cpan.org/authors/id/G/GB/GBARR/TimeDate-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
+Patch0:         0001-Update-Test-t-getdate.t.patch
 
 BuildArch:      noarch
 BuildRequires:  perl(ExtUtils::MakeMaker)
-Requires:  perl
+Requires:       perl
 
 %description
 This module includes a number of smaller modules suited for
@@ -22,6 +22,8 @@ textual representations of points in time.
 
 %prep
 %setup -q -n %{name}-%{version}/%{name}
+
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
