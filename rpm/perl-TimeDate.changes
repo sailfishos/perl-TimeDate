@@ -1,7 +1,7 @@
-* Tue Jul 20 2010 Quanxian Wang <quanxian.wang@intel.com>  - 1.20
+* Tue Jul 20 2010 Quanxian Wang <quanxian.wang@intel.com> - 1.20
 - Change the version dependency
 
-* Wed June 30 2010 Quanxian Wang <quanxian.wang@intel.com>  - 1.20
+* Wed Jun 30 2010 Quanxian Wang <quanxian.wang@intel.com> - 1.20
 - Add %doc before man file entry
 
 * Fri Mar 26 2010 Anas Nashif <anas.nashif@intel.com> - 1.20
@@ -10,6 +10,6 @@
 * Thu Dec 24 2009 Passion Zhao <passion.zhao@intel.com> - 1.20
 - Update to 1.20
 
-* Fri Nov 28 2008 Anas Nashif <anas.nashif@intel.com> 1.16
-Initial import into Moblin
+* Fri Nov 28 2008 Anas Nashif <anas.nashif@intel.com> - 1.16
+- Initial import into Moblin
 
