@@ -1,0 +1,3 @@
+[submodule "perl-TimeDate"]
+	path = perl-TimeDate
+	url = https://git.sailfishos.org/mirror/perl-TimeDate.git

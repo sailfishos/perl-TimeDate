@@ -6,8 +6,7 @@ Summary:        A Perl module for time and date manipulation
 Group:          Development/Libraries
 License:        GPL+ or Artistic
 URL:            http://search.cpan.org/dist/TimeDate/
-Source0:   http://www.cpan.org/authors/id/G/GB/GBARR/TimeDate-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Source0:        http://www.cpan.org/authors/id/G/GB/GBARR/TimeDate-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  perl(ExtUtils::MakeMaker)
@@ -22,14 +21,13 @@ textual representations of points in time.
 
 
 %prep
-%setup -q -n TimeDate-%{version}
+%setup -q -n %{name}-%{version}/%{name}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 make %{?_smp_mflags}
 
 %install
-rm -rf $RPM_BUILD_ROOT
 make pure_install PERL_INSTALL_ROOT=$RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT -type f -name .packlist -exec rm -f {} ';'
 find $RPM_BUILD_ROOT -depth -type d -exec rmdir {} 2>/dev/null ';'
